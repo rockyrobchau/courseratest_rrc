@@ -1,111 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coursera RRC</title>
-<style>
-
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-  padding: 5px;
-}
-h1 {
-  margin-bottom: 15px;
-  text-align: center;
-  color: green;
-  background-color: lavender;
-  font-family: sans-serif;
-  padding: 20px;
-}
-
-#p1 {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: sans-serif;
-  color: white;
-}
-
-#p2 {
-  border: 1px solid black;
-  background-color: #0000ff;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: sans-serif;
-  color: white;
-}
-
-#p3 {
-  border: 1px solid black;
-  background-color: #0012ff;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: sans-serif;
-  color: white;
-}
-
-/* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
-/********** Large devices only **********/
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-    border: 1px solid green;
-  }
-  .col-lg-1 {
-    width: 25%;
-  }
-  .col-lg-2 {
-    width: 25%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-}
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-    border: 1px solid green;
-  }
-  .col-md-1 {
-    width: 25%;
-  }
-  .col-md-2 {
-    width: 25%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-}
-
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 2 - RRC Assignment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<h1>Our Restaurant Menu</h1>
-
-<div class="row">
-  <div class="col-lg-3 col-md-6"><p id="p1">Menu for Chicken Items, 
-  BBQ, FRY, Stew or Curry</p></div>
-  <div class="col-lg-3 col-md-6"><p id="p2">Menu for Beef Items, 
-  BBQ, FRY, Stew or Curry</p></div>
-  <div class="col-lg-3 col-md-6"><p id="p3">Menu for Sushi, 
-  California Rolls, Sashimi or Dynamite Rolls</p></div>
-</div>
-
-
+    <h1>Our Restaurant Menu</h1>
+    <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <section class="chicken">
+                <h2>Chicken</h2>
+                <p>
+                    Our Chicken menu comprises of sweet and savoury delicacies of many types. Including Barbeque, Lemongrass, Orange, General Tao and Teryiyaki
+                </p>
+            </section>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <section class="beef">
+                <h2>Beef</h2>
+                <p>
+                    Our tender and juicy beef is marinated for over 24hours to give you the most succulent taste your tastebuds can imagine. We have Beef Ribs as well as your favourite cuts of steaks, T-Bone, Striploin or Filet Miñon
+                </p>
+            </section>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <section class="sushi">
+                <h2>Sushi</h2>
+                <p>
+                    Our Sushi is prepared fresh daily from our master sushi maker, this includes all your favourite types from Sashimi to California Rolls. Our fish is delivered fresh daily from local as well as trusted international suppliers
+                </p>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>
