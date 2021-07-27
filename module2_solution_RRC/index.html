@@ -2,46 +2,58 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>The Box Model</title>
+<title>Positioning Elements</title>
 <style>
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-body {
-  background-color: gray;
-}
-
-#box {
-  background-color: blue;
-  padding: 10px;
-  border: 5px solid black;
-  width: 300px;
-  height: 50px;
-  margin-top: 50px;
-  overflow: auto;
-}
-#content {
-  background-color: #90EE90; /* green */
-}
-
 h1 {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+div#container {
+  background-color: #00FFFF;
+  position: relative;
+  top: 60px;
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+#p1 {
+  background-color: #A52A2A;
+  position: relative;
+  top: 65px;
+  left: 65px;
+}
+#p2 {
+  background-color: #DEB887;
+}
+#p3 {
+  background-color: #5F9EA0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#p4 {
+  background-color: #FF7F50;
 }
 
 </style>
 </head>
 <body>
+<h1>Positioning Elements</h1>
 
-<h1>Opening Menu</h1>
-
-<div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
-  </div>
+<div id="container">
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
 </div>
-
 
 </body>
 </html>
