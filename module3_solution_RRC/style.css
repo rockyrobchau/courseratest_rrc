@@ -1,11 +1,180 @@
-.row {
-  margin-bottom: 15px;
-}
-.row > div {
-  border: 2px solid red;
-  background-color: gray;
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #FFAC00;
+  font-family: 'Helvetica', sans-serif;
 }
 
-h1 {
-  background-color: gray;
+/** HEADER **/
+#header-nav {
+  background-color: #B5D0D5;
+  border-radius: 0;
+  border: 0;
+  padding: 5px;
 }
+
+#logo-img {
+  background-color: coral;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Helvetica', serif;
+  color: #95AB29;
+  font-size: 2em;
+  text-transform: initial;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p span { /* RockyRobChau */
+  color: #0000ff;
+  text-transform: initial;
+  font-size: .7em;
+  margin-top: 5px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+/* Main */
+
+#menu-home {
+  font-size: 3em;
+}
+
+#chicken-tile, #beef-tile, #sushi-tile {
+  height: 1000px;
+  width: 100%;
+  margin-bottom: 1px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  background-color: #DCBCDC;
+  border-radius: 15px;
+  overflow: auto;
+}
+
+section>h2 {
+  float: right;
+  margin-top: .25px;
+  margin-right: .5px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-top: 5px;
+  border:  2px 0px 0px 2px solid black;
+  background-color: teal;
+  border-radius: 5px;
+  clear: all;
+
+}
+
+
+p {
+  margin-top 25px;
+  box-sizing: border-box;
+}
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  border: 0 0 10px 10px;
+  color: #FFFFFF;
+}
+
+#header-nav {
+  border: 0;
+  background-color: #FC5F06;
+  color: #FFFFFF;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -15px;
+}
+
+.nav-header {
+  background-color: #FFFFFF;
+}
+
+.nav-brand {
+  color: #FFFFFF;
+  font-size: 1.5em;
+}
+
+#nav-list {
+  color: white;
+  border: 1px;
+}
+
+hr {
+  border-color: white;
+}
+
+.item {
+  color: white;
+  font-size: 1.2em;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
